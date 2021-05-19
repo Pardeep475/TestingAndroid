@@ -20,9 +20,9 @@ object ApiClient {
 
     fun getClient(context: Context): Retrofit {
         val httpClient = OkHttpClient.Builder()
-//        httpClient.connectTimeout(1000, TimeUnit.MINUTES)
-//        httpClient.readTimeout(2, TimeUnit.MINUTES)
-//        httpClient.writeTimeout(2, TimeUnit.MINUTES)
+        httpClient.connectTimeout(1000, TimeUnit.MINUTES)
+        httpClient.readTimeout(2, TimeUnit.MINUTES)
+        httpClient.writeTimeout(2, TimeUnit.MINUTES)
         httpClient.addInterceptor { chain ->
             val builder = chain.request().newBuilder()
             builder.addHeader("Content-Type", "application/json")
