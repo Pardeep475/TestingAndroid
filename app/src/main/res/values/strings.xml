@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TestApplication</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="choose_theme_text">Choose Theme Text</string>
+</resources>
